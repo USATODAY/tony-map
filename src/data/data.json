@@ -1,0 +1,354 @@
+[
+    {
+        "chatter": "Use our interactive map to explore the best places of the theater district.",
+        "project_head": "Top 10 theaters, restaurants and hotels to experience broadway like a pro.",
+        "id": "1",
+        "restaurants": [
+            {
+                "address_geocode": "622 Tenth Avenue, New York, NY 10036",
+                "latitude": 40.761135,
+                "longitude": -73.994374,
+                "image": "",
+                "name": "44 & X",
+                "website": "http://www.44andx.com/",
+                "description": "A hidden gem in Hell's Kitchen, this is a brunch must for matineegoers. The bright local hot spot serves perfectly presented dishes from overstuffed omelets to silver dollar pancakes, with patio seating available."
+            },
+            {
+                "address_geocode": "321 West 46th Street, New York, NY 10036",
+                "latitude": 40.760035,
+                "longitude": -73.988506,
+                "image": "barbetta.jpg",
+                "name": "Barbetta",
+                "website": "http://www.nycgo.com/venues/barbetta",
+                "description": "One of Manhattan's longest-running family-owned establishments, Barbetta is a Restaurant Row institution. Reserve a romantic meal in the elegant dining room or charming garden with a modest $58 pre-theatre menu of Italian classics."
+            },
+            {
+                "address_geocode": "200 West 44th Street, New York, NY 10036",
+                "latitude": 40.757824,
+                "longitude": -73.987163,
+                "image": "",
+                "name": "Carmine's",
+                "website": "http://carminesnyc.com/locations/theater-district-nyc/",
+                "description": "You can't go wrong with classic Italian, and Carmine's family sharing style lets you try a little of everything. The vibrant atmosphere will amp you up for the glitz and glam of Broadway."
+            },
+            {
+                "address_geocode": "326 West 44th Street, New York, NY 10036",
+                "latitude": 40.75885,
+                "longitude": -73.989596,
+                "image": "joeallen.jpg",
+                "name": "Joe Allen",
+                "website": "http://joeallenrestaurant.com/Joe_Allen_welcome.html",
+                "description": "Joe Allen is a local landmark and pairs perfectly with a night of Broadway. The walls are decorated with posters of shows that flopped and stars have been known to come by for post-performance drinks."
+            },
+            {
+                "address_geocode": "3 East 52nd Street, New York, NY 10022",
+                "latitude": 40.759726,
+                "longitude": -73.975544,
+                "image": "lagrenoille.jpg",
+                "name": "La Grenouille",
+                "website": "http://www.la-grenouille.com/",
+                "description": "High-end and old school,  La Grenouille offers a refined French meal with unmatched service. A pre-theatre prix fixe is offered for $79 or you can opt for a la carte at its Aviateur bar."
+            },
+            {
+                "address_geocode": "1626 Second Avenue, New York, NY 10028",
+                "latitude": 40.776612,
+                "longitude": -73.952279,
+                "image": "lapulperia.jpg",
+                "name": "La Pulperia",
+                "website": "http://pulperianyc.com/home",
+                "description": "La Pulperia is the place for authentic South American fare and pisco cocktails. Share small plates (like the ceviche mixto), oysters or a seafood tower paired with festive Latin drinks."
+            },
+            {
+                "address_geocode": "132 West 44th Street, New York, NY 10036",
+                "latitude": 40.756757,
+                "longitude": -73.984632,
+                "image": "",
+                "name": "The Lamb's Club",
+                "website": "http://www.thelambsclub.com/",
+                "description": "Geoffrey Zakarian's old school steakhouse offers a $49, three-course pre-theater menu and a well renowned beverage program. The dining room pays homage to an actors' club that used to meet in the building, and the bar is a popular spot for cocktails."
+            },
+            {
+                "address_geocode": "155 West 51st Street, New York, NY 10019",
+                "latitude": 40.761719,
+                "longitude": -73.982807,
+                "image": "lebernardin.jpg",
+                "name": "Le Bernardin",
+                "website": "http://le-bernardin.com/",
+                "description": "More Midtown than Theatre District, Eric Ripert's three Michelin-starred mainstay is the ultimate indulgence close enough to the show but outside the chaos. Tasting menus run from $170 to $345, but his newer Aldo Sahm Wine Bar next door offers a far more affordable menu."
+            },
+            {
+                "address_geocode": "691 8th Avenue, New York, NY 10036",
+                "latitude": 40.758434,
+                "longitude": -73.989368,
+                "image": "shakeshack.jpg",
+                "name": "Shake Shack",
+                "website": "https://www.shakeshack.com/location/theater-district/",
+                "description": "The easy, affordable way to knock out two attractions in one is to stop in Shake Shack's Theatre District location. It may not be fast depending on the line, but the burgers are New York bucket list-worthy and the chain offers beer and wine unlike most of its kind."
+            },
+            {
+                "address_geocode": "251 West 50th Street, New York, NY 10019",
+                "latitude": 40.761848,
+                "longitude": -73.985055,
+                "image": "toloache.jpg",
+                "name": "Toloache",
+                "website": "http://toloachenyc.com/media/toloache.html",
+                "description": "Chef Julian Medina's fare will transport you to Mexico City, and the festive atmosphere makes for an upbeat way to start the evening. Trios of guacamole and ceviche are perfect for sharing."
+            }
+        ],
+        "hotels": [
+            {
+                "address_geocode": "130 West 44th Street \u00b7 New York, New York, 10036",
+                "latitude": 40.756486,
+                "longitude": -73.984585,
+                "image": "",
+                "name": "The Chatwal",
+                "website": "Thechatwalny.com",
+                "description": "Why we like it: Designed by legendary architect Stanford White, this hotel oozes 20th-century glamour. The Art Deco building is also home to one of New York City's favorite power lunch spots, the Lambs Club, named for a turn of the century theater group and run by celebrity chef Geoffrey Zakarian. Rooms are spacious by Manhattan standards."
+            },
+            {
+                "address_geocode": "44 West 44th Street New York, NY 10036",
+                "latitude": 40.755377,
+                "longitude": -73.981351,
+                "image": "",
+                "name": "Royalton Hotel",
+                "website": "Morganshotelgroup.com/originals/originals-royalton-new-york",
+                "description": "Why we like it: This hotel was the brainchild of Ian Schrager, widely considered the creator of the modern boutique hotel concept, and famed French designer Philippe Starck. When it opened in 1987, the lobby almost felt like one of Schrager's nightclubs. Schrager is no longer involved with the hotel, but the lobby is still a popular place for socializing."
+            },
+            {
+                "address_geocode": "235 West 46th Street New York, NY 10036",
+                "latitude": 40.759638,
+                "longitude": -73.986978,
+                "image": "",
+                "name": "Paramount Hotel",
+                "website": "Nycparamount.com",
+                "description": "Why we like it: The Paramount Hotel takes its location near Broadway seriously. It has partnered with the Broadway League to be the host hotel for the annual Tony Awards. There's no need to leave the hotel to catch a show. Billy Rose's Diamond Horseshoe nightclub, which inspired a 1940s musical, operates out of the basement. The hotel itself has a unique design. After all, Schrager once owned the property and Starck re-designed it."
+            },
+            {
+                "address_geocode": "59 West 44th Street New York, NY 10036",
+                "latitude": 40.756018,
+                "longitude": -73.98231,
+                "image": "",
+                "name": "Algonquin Hotel",
+                "website": "Algonquinhotel.com",
+                "description": "Why we like it: This historic hotel was home to the Algonquin Round Table in the 1920s, a group of famous writers, actors, and critics. The Round Table Restaurant and Blue Bar are still popular spots for martinis and conversation (don't be surprised if the Algonquin Cat stops by your table). An extensive 2012 renovation maintained the hotel's historic charm but added some modern touches."
+            },
+            {
+                "address_geocode": "147 West 43rd Street New York, NY 10036",
+                "latitude": 40.756518,
+                "longitude": -73.985456,
+                "image": "casablanca.jpg",
+                "name": "Casablanca Hotel",
+                "website": "Casablancahotel.com",
+                "description": "Why we like it: This hotel is located just steps from bustling Times Square, but as soon as you walk in, you feel like you're in another time and place. The Moroccan d\u00e9cor was inspired by the movie \"Casablanca.\" But the best part of the hotel is all the amenities: complimentary refreshments 24 hours a day, a deluxe continental breakfast each morning, and nightly wine and cheese receptions from 5 to 8 p.m., all served at the appropriately named Rick's Caf\u00e9."
+            },
+            {
+                "address_geocode": "1567 Broadway New York, NY 10036",
+                "latitude": 40.759373,
+                "longitude": -73.985689,
+                "image": "",
+                "name": "W New York Times Square",
+                "website": "Wnewyorktimessquare.com",
+                "description": "Why we like it: The W is perhaps Starwood Hotels and Resorts' sexiest brand. The W New York Times Square fits that description, even while undergoing a renovation of its lobby. The hotel is just as vibrant as Times Square. Stop by Blue Fin for sushi and jazz, or have a cocktail in the cozy Living Room. The renovation, which will be completed in September, will also result in the addition of a Dos Caminos restaurant. If you can spring for it, stay in the Extreme WOW suite."
+            },
+            {
+                "address_geocode": "226 West 57th Street New York, NY10019",
+                "latitude": 40.765974,
+                "longitude": -73.981107,
+                "image": "",
+                "name": "Novotel New York Times Square",
+                "website": "Novotel.com/gb/hotel-0753-novotel-new-york-times-square/index.shtml",
+                "description": "Why we like it: The Novotel re-opened just over a year ago after an $85 million renovation that resulted in an edgier, more contemporary look. Guests walk into a lobby with images flashing on LCD flat screens\u2014apropos for a hotel right in the middle of Times Square. The biggest draw is the massive outside terrace off SuperNova restaurant. It has one of the best views of Times Square."
+            },
+            {
+                "address_geocode": "135 West 34th Street New York, NY 10036",
+                "latitude": 40.750249,
+                "longitude": -73.988869,
+                "image": "",
+                "name": "Hyatt Times Square New York",
+                "website": "timessquare.hyatt.com",
+                "description": "Why we like it: Bar 54 is rivaling Novotel's terrace for best outdoor drinking spot in Times Square. Billed as the tallest rooftop lounge in the city, it's set atop the hotel's 54-story tower and has expansive views of Manhattan from the Hudson River to the East River. There are just 11 apartment-style rooms on each floor, making the hotel seem more intimate than its size would suggest."
+            },
+            {
+                "address_geocode": "6 Times Square, New York, NY 10036",
+                "latitude": 40.7555831,
+                "longitude": -73.9862701,
+                "image": "",
+                "name": "Knickerbocker Hotel",
+                "website": "Theknickerbocker.com",
+                "description": "Why we like it: Built in 1906 by John Jacob Astor IV, who died on the Titanic, the Knickerbocker, or the \"Knick,\" once attracted glitterati and dignitaries. The hotel, which re-opened in February after a $240 million re-development, is poised to once again become a hotspot with three eating and drinking establishments by celebrity chef Charlie Palmer. One of them, St. Cloud, a 7,500 square-foot rooftop bar and terrace, is scheduled to open this Spring."
+            },
+            {
+                "address_geocode": "20 West 53rd Street New York, NY 10019",
+                "latitude": 40.760672,
+                "longitude": -73.976436,
+                "image": "",
+                "name": "Baccarat Hotel and Residences New York",
+                "website": "Baccarathotels.com",
+                "description": "Why we like it: This brand-new hotel, developed by W Hotels founder Barry Sternlicht, is one of New York City's most opulent. It's the first of the 250-year-old French crystal maker's new hotel brand. The public spaces\u2014or salons\u2014are stunning, with 17-custom-made crystal chandeliers scattered throughout. Drinks are served in Baccarat stemware. The room's mini-bar also has Baccarat stemware in it. As lavish as the rest of the hotel is, rooms are simple and elegant."
+            }
+        ],
+        "project_share": "The top 10 theathers, resturants and hotels to expereince broadway like a pro via @usatoday",
+        "theaters": [
+            {
+                "theater_id": "1",
+                "address_geocode": "150 West 65th Street, New York, NY 10023",
+                "latitude": 40.773612,
+                "longitude": -73.983581,
+                "image": "",
+                "name": "Vivian Beaumont Theater",
+                "video": "none",
+                "shows": [
+                    {
+                        "name": "The King and I",
+                        "description": "Lincoln Center Theater presents another sweeping, stirring revival of a Rodgers and Hammerstein treasure. Like LCT\u2019s 2008 revival of South Pacific, it pairs Bartlett Sher, our foremost director of American classics, with radiant leading lady Kelli O\u2019Hara.",
+                        "image": "kingandi.jpg"
+                    }
+                ]
+            },
+            {
+                "theater_id": "2",
+                "address_geocode": "261 West 47th Street, New York, NY 10036",
+                "latitude": 40.760481,
+                "longitude": -73.986713,
+                "image": "",
+                "name": "Samuel J. Friedman Theatre",
+                "video": "none",
+                "shows": [
+                    {
+                        "name": "Airline Highway",
+                        "description": "Lisa D\u2019Amour\u2019s lyrical, funny, aching new play focuses on a New Orleans community that forms on the fringes of society. D\u2019Amour and a flawless cast, directed by Joe Mantello, address its members\u2019 many challenges with wit, dignity and compassion.",
+                        "image": "airlinehighway.jpg"
+                    }
+                ]
+            },
+            {
+                "theater_id": "3",
+                "address_geocode": "235 West 50th Street, New York, NY 10019",
+                "latitude": 40.7617,
+                "longitude": -73.984706,
+                "image": "",
+                "name": "Circle in the Square Theatre",
+                "video": "none",
+                "shows": [
+                    {
+                        "name": "Fun Home",
+                        "description": "This inventive, moving musical adaptation of Alison Bechdel\u2019s graphic memoir traces a woman\u2019s struggle to transcend family dysfunction. A marvelous cast \u2013 featuring three actresses who take the heroine from childhood to early middle age \u2013 make that difficult journey exhilarating.",
+                        "image": "funhome.jpg"
+                    }
+                ]
+            },
+            {
+                "theater_id": "4",
+                "address_geocode": "1564 Broadway, New York, NY 10036",
+                "latitude": 40.759156,
+                "longitude": -73.985155,
+                "image": "",
+                "name": "Palace Theatre",
+                "video": "none",
+                "shows": [
+                    {
+                        "name": "An American in Paris",
+                        "description": "Renowned choreographer Christopher Wheeldon brings ballet to Broadway, ravishingly, in this new adaptation of the 1951 film classic. The Gershwin score shines, and New York City Ballet star Robert Fairchild fills Gene Kelly\u2019s shoes with exquisite grace.",
+                        "image": "anamericaninparis.jpg"
+                    }
+                ]
+            },
+            {
+                "theater_id": "5",
+                "address_geocode": "214 West 42nd Street, New York, NY 10036",
+                "latitude": 40.755948,
+                "longitude": -73.988048,
+                "image": "",
+                "name": "New Amsterdam Theatre",
+                "video": "none",
+                "shows": [
+                    {
+                        "name": "Aladdin",
+                        "description": "Director/choreographer Casey Nicholaw, also known for The Book of Mormon and this season\u2019s Something Rotten!, strikes the perfect balance between giddy irreverence and wonder, making this adaptation of Disney\u2019s animated film fun for the whole family.",
+                        "image": "aladdin.jpg"
+                    }
+                ]
+            },
+            {
+                "theater_id": "6",
+                "address_geocode": "222 West 51st Street, New York, NY 10019",
+                "latitude": 40.762256,
+                "longitude": -73.984081,
+                "image": "",
+                "name": "Gershwin Theatre",
+                "video": "none",
+                "shows": [
+                    {
+                        "name": "Wicked",
+                        "description": "If you haven\u2019t seen it yet \u2013 or if your kids haven\u2019t \u2013 this behemoth packs a delightful and empowering story. And its score, by Stephen Schwartz, outshines those of most musicals that have opened in its nearly 12 years on Broadway.",
+                        "image": "wicked.jpg"
+                    }
+                ]
+            },
+            {
+                "theater_id": "7",
+                "address_geocode": "243 West 47th Street, New York, NY 10036",
+                "latitude": 40.760207,
+                "longitude": -73.986129,
+                "image": "",
+                "name": "Ethel Barrymore Theatre",
+                "video": "none",
+                "shows": [
+                    {
+                        "name": "The Curious Incident of the Dog in the Night-Time",
+                        "description": "Adapted from the novel and first performed in London, the play takes us inside the mind of a brilliant but socially challenged teenage boy as he embarks on a dangerous, loaded adventure. The result is visually arresting, poignant and ultimately uplifting.",
+                        "image": "curiousincident.jpg"
+                    }
+                ]
+            },
+            {
+                "theater_id": "8",
+                "address_geocode": "213 West 42nd Street, New York, NY 10036",
+                "latitude": 40.756183,
+                "longitude": -73.987297,
+                "image": "",
+                "name": "Lyric Theatre",
+                "video": "none",
+                "shows": [
+                    {
+                        "name": "On the Town",
+                        "description": "The musical, which teamed Leonard Bernstein with Comden and Green, is probably best known for the starry 1949 film adaptation. But this revival recaptures the stage version\u2019s wistful, gritty spirit, while still offering buoyant entertainment \u2013 and glorious dance routines (by Joshua Bergasse).",
+                        "image": "onthetown.jpg"
+                    }
+                ]
+            },
+            {
+                "theater_id": "9",
+                "address_geocode": "252 West 45th Street, New York, NY 10036",
+                "latitude": 40.758713,
+                "longitude": -73.98795,
+                "image": "",
+                "name": "John Golden Theatre",
+                "video": "none",
+                "shows": [
+                    {
+                        "name": "Skylight",
+                        "description": "Couples and singles will find plenty to discuss, and debate, after seeing this U.K.-based production of David Hare\u2019s play, in which a man visits his former mistress. Bill Nighy and Carey Mulligan make the differences between their characters amusing and affecting.",
+                        "image": "skylight.jpg"
+                    }
+                ]
+            },
+            {
+                "theater_id": "10",
+                "address_geocode": "227 West 42nd Street, New York, NY 10036",
+                "latitude": 40.756354,
+                "longitude": -73.987703,
+                "image": "",
+                "name": "American Airlines Theatre",
+                "video": "none",
+                "shows": [
+                    {
+                        "name": "On the Twentieth Century",
+                        "description": "The Cy Coleman/Betty Comden/Adolph Green musical comedy has been revived as a vehicle for the unique talents of Kristin Chenoweth, an expert comedienne with a gleaming soprano. But the whole cast sparkles, and tickles, in this gleeful staging.",
+                        "image": "onthetwentiethcentury.jpg"
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -20,13 +20,40 @@
 </head>
 
 <body>
-  <header><iframe id="header" width="100%" height="39" frameborder="0" scrolling="no" src="http://www.usatoday.com/services/cobrand/header/"></iframe></header>
+<style>
+  body { margin:0; padding:0; }
+  #map {width:880px; height: 710px }
+  .leaflet-popup-content {
+    width: 100% !important;
+  }
+  .leaflet-popup-content-wrapper { width: 660px;}
+</style>
+<header><iframe id="header" width="100%" height="39" frameborder="0" scrolling="no" src="http://www.usatoday.com/services/cobrand/header/"></iframe></header>
+  <link href='http://www.gannett-cdn.com/experiments/usatoday/_common/_maps/mapbox.css' rel='stylesheet'/>
+<div class='outter-wrap'>
 
-  <div class="page-wrap card">
-    <h1>mapboxtest</h1>
-    <p class="chatter">This is the starting place for interactive applications.</p>
-    <div class="button">Let's Go!</div>
-  </div>
+        <!-- PROJECT HEAD -->
+        <div class="head-wrap">
+            <h2 class="js-head">Top 10 theathers, restaurants and hotels to experience broadway like a pro.</h2>
+            <p class="js-chatter">Use our interactive map to explore the best places of the theater district.</p>
+        </div>
+
+
+        <!-- MAIN CONTENT -->
+        <div class='main-content-wrap'>
+
+            <div id='map'></div>
+
+        </div>
+
+
+        <!-- FOOTER -->
+        <div class='footer-wrap cf'>
+                <!-- CREDITS LIST  -->
+                <h6><strong>Credits:</strong> By Jason Allen, Denny Gainer, Laura Petrecca and Mitchell Thorson, USA TODAY</h6>
+        </div>
+
+    </div>
   <script data-main="js/main" src="require.js"></script>
 </body>
 </html>
