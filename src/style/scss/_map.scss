@@ -1,0 +1,19 @@
+body { margin:0; padding:0; }
+
+#map {
+    @include BoxShadowHelper(1);
+    height: 600px;
+    max-height: 75%;
+    width:100%; 
+}
+
+.leaflet-popup-content {
+    // width: 100% !important;
+}
+
+// .leaflet-popup-content-wrapper { width: 660px;}
+
+.map-img {
+    width: 300px;
+}
+

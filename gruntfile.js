@@ -297,17 +297,17 @@ module.exports = function(grunt) {
       },
       upload1: {
         files: {
-          '/17200/experiments/usatoday/2015/05/tony-map/': 'js/main.js'
+          '/17200/experiments/usatoday/2015/05/broadway/': 'js/main.js'
         }
       },
       upload2: {
         files: {
-          '/17200/experiments/usatoday/2015/05/tony-map/': 'style/project.css'
+          '/17200/experiments/usatoday/2015/05/broadway/': 'style/project.css'
         }
       },
       upload3: {
         files: {
-          '/17200/experiments/usatoday/2015/05/tony-map/': 'data/*.json'
+          '/17200/experiments/usatoday/2015/05/broadway/': 'data/*.json'
         }
       }
     },

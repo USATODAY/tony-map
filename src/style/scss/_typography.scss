@@ -34,3 +34,36 @@ strong {
 .subhead {
   font-weight: bold;
 }
+
+article {
+  font-family: "Futura Today Normal", Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  margin: 0;
+}
+
+article .iapp-page-header {
+  color: $blue;
+  font-family: "Futura Today Bold", Arial,sans-serif;
+  font-size: 2.8em;
+  line-height: 1em;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+  text-align: left;
+  text-transform: uppercase;
+  @media (max-width: 900px) {
+    font-size: 2em;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+.iapp-page-chatter {
+  font: normal 1.2em/1.5 'arial','helvetica',sans-serif;
+  color: #666;
+  margin: 1em 0;
+}

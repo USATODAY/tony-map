@@ -1,0 +1,9 @@
+.iapp-head-wrap, .iapp-footer-wrap {
+    padding: 1em 2em;
+}
+
+article, article.asset article.padded-container {
+    background: $extra-light-grey;
+    padding: 0;
+    width: 100%;
+}

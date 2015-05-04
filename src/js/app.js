@@ -14,6 +14,10 @@ define(
             app.loadData();
         };
 
+        var iconSize = 30;
+        var iconAnchor = [15, 15];
+        var popupAnchor = [0, -15];
+
         app.loadData = function () {
             var hostname = window.location.hostname;
             var strURL;
@@ -27,14 +31,20 @@ define(
             if (hostname != "localhost") {
                 jQuery.getJSON(strURL, function (data) { //"http://" + hostname + "/services/webproxy/?url=" + strURL, function (data)
                     app.objData = data;
+                    app.render();
                     app.setupMap();
                 });
             } else {
                 jQuery.getJSON('/data/data.json', function (data) {
                     app.objData = data;
+                    app.render();
                     app.setupMap();
                 });
             }
+        };
+
+        app.render = function() {
+            $('.iapp-page-wrap').html(templates['app.html']());
         };
 
         app.setupMap = function () {
@@ -54,13 +64,20 @@ define(
                 feature.type = "Feature";
                 feature.properties = {};
                 feature.properties.title = app.objData[0].theaters[index].name;
-                feature.properties["marker-color"] = "#008A2E";
-                feature.properties["marker-size"] = "medium";
-                feature.properties["marker-symbol"] = "cinema";
+                // feature.properties["marker-color"] = "#008A2E";
+                feature.properties.icon = {
+                    "iconUrl": "http://www.gannett-cdn.com/experiments/usatoday/2015/05/broadway/images/theatre_loop.gif",
+                    "iconSize": [iconSize, iconSize],
+                    "iconAnchor": iconAnchor, // point of the icon which will correspond to marker's location
+                    "popupAnchor": popupAnchor, // point from which the popup should open relative to the iconAnchor
+                    "className": "dot"
+                };
+                // feature.properties["marker-size"] = "medium";
+                // feature.properties["marker-symbol"] = "cinema";
                 if (app.objData[0].theaters[index].shows[0].image !== "") {
-                    feature.properties.image = "<img src=\"" + strImageBase + app.objData[0].theaters[index].shows[0].image + "\" width=\"640\" height=\"390\" /> <h2>" + app.objData[0].theaters[index].shows[0].name + "</h2><p><span class=\"subhead\">Description:</span> " + app.objData[0].theaters[index].shows[0].description + "</p><p><span class=\"subhead\">Theater:</span> " + app.objData[0].theaters[index].name + "<br>" + app.objData[0].theaters[index].address_geocode;
+                    feature.properties.image = "<img src=\"" + strImageBase + app.objData[0].theaters[index].shows[0].image + "\" class='map-img'/> <h2>" + app.objData[0].theaters[index].shows[0].name + "</h2><p><span class=\"subhead\">Description:</span> " + app.objData[0].theaters[index].shows[0].description + "</p><p><span class=\"subhead\">Theater:</span> " + app.objData[0].theaters[index].name + "<br>" + app.objData[0].theaters[index].address_geocode;
                 } else {
-                    feature.properties.image = "<img src=\"" + strImageBase + "na.jpg\" width=\"640\" height=\"390\" /> <h2>" + app.objData[0].theaters[index].shows[0].name + "</h2><p><span class=\"subhead\">Description:</span> " + app.objData[0].theaters[index].shows[0].description + "</p><p><span class=\"subhead\">Theater:</span> " + app.objData[0].theaters[index].name + "<br>" + app.objData[0].theaters[index].address_geocode;
+                    feature.properties.image = "<img src=\"" + strImageBase + "na.jpg\"  class='map-img'/> <h2>" + app.objData[0].theaters[index].shows[0].name + "</h2><p><span class=\"subhead\">Description:</span> " + app.objData[0].theaters[index].shows[0].description + "</p><p><span class=\"subhead\">Theater:</span> " + app.objData[0].theaters[index].name + "<br>" + app.objData[0].theaters[index].address_geocode;
                 }
                 feature.geometry = {};
                 feature.geometry.type = "Point";
@@ -75,13 +92,20 @@ define(
                 feature.type = "Feature";
                 feature.properties = {};
                 feature.properties.title = app.objData[0].restaurants[index].name;
+                feature.properties.icon = {
+                    "iconUrl": "http://www.gannett-cdn.com/experiments/usatoday/2015/05/broadway/images/wine_loop.gif",
+                    "iconSize": [iconSize, iconSize],
+                    "iconAnchor": iconAnchor, // point of the icon which will correspond to marker's location
+                    "popupAnchor": popupAnchor, // point from which the popup should open relative to the iconAnchor
+                    "className": "dot"
+                };
                 feature.properties["marker-color"] = "#008A2E";
                 feature.properties["marker-size"] = "medium";
                 feature.properties["marker-symbol"] = "restaurant";
                 if (app.objData[0].restaurants[index].image !== "") {
-                    feature.properties.image = "<img src=\"" + strImageBase + app.objData[0].restaurants[index].image + "\" width=\"640\" height=\"390\" /> <h2>" + app.objData[0].restaurants[index].name + "</h2><p><span class=\"subhead\">Description:</span> " + app.objData[0].restaurants[index].description + "</p><p><span class=\"subhead\">Info:</span> " + app.objData[0].restaurants[index].website + "<br>" + app.objData[0].restaurants[index].address_geocode;
+                    feature.properties.image = "<img src=\"" + strImageBase + app.objData[0].restaurants[index].image + " class='map-img'/> <h2>" + app.objData[0].restaurants[index].name + "</h2><p><span class=\"subhead\">Description:</span> " + app.objData[0].restaurants[index].description + "</p><p><span class=\"subhead\">Info:</span> " + app.objData[0].restaurants[index].website + "<br>" + app.objData[0].restaurants[index].address_geocode;
                 } else {
-                    feature.properties.image = "<img src=\"" + strImageBase + "na.jpg\" width=\"640\" height=\"390\" /> <h2>" + app.objData[0].restaurants[index].name + "</h2><p><span class=\"subhead\">Description:</span> " + app.objData[0].restaurants[index].description + "</p><p><span class=\"subhead\">Info:</span> " + app.objData[0].restaurants[index].website + "<br>" + app.objData[0].restaurants[index].address_geocode;
+                    feature.properties.image = "<img src=\"" + strImageBase + "na.jpg\" class='map-img' /> <h2>" + app.objData[0].restaurants[index].name + "</h2><p><span class=\"subhead\">Description:</span> " + app.objData[0].restaurants[index].description + "</p><p><span class=\"subhead\">Info:</span> " + app.objData[0].restaurants[index].website + "<br>" + app.objData[0].restaurants[index].address_geocode;
                 }
                 feature.geometry = {};
                 feature.geometry.type = "Point";
@@ -96,13 +120,20 @@ define(
                 feature.type = "Feature";
                 feature.properties = {};
                 feature.properties.title = app.objData[0].hotels[index].name;
+                feature.properties.icon = {
+                    "iconUrl": "http://www.gannett-cdn.com/experiments/usatoday/2015/05/broadway/images/bell_loop.gif",
+                    "iconSize": [iconSize, iconSize],
+                    "iconAnchor": iconAnchor, // point of the icon which will correspond to marker's location
+                    "popupAnchor": popupAnchor, // point from which the popup should open relative to the iconAnchor
+                    "className": "dot"
+                };
                 feature.properties["marker-color"] = "#008A2E";
                 feature.properties["marker-size"] = "medium";
                 feature.properties["marker-symbol"] = "commercial";
                 if (app.objData[0].hotels[index].image !== "") {
-                    feature.properties.image = "<img src=\"" + strImageBase + app.objData[0].hotels[index].image + "\" width=\"640\" height=\"390\" /> <h2>" + app.objData[0].hotels[index].name + "</h2><p><span class=\"subhead\">Description:</span> " + app.objData[0].hotels[index].description + "</p><p><span class=\"subhead\">Info:</span> " + app.objData[0].hotels[index].website + "<br>" + app.objData[0].hotels[index].address_geocode;
+                    feature.properties.image = "<img src=\"" + strImageBase + app.objData[0].hotels[index].image + "\" class='map-img'/> <h2>" + app.objData[0].hotels[index].name + "</h2><p><span class=\"subhead\">Description:</span> " + app.objData[0].hotels[index].description + "</p><p><span class=\"subhead\">Info:</span> " + app.objData[0].hotels[index].website + "<br>" + app.objData[0].hotels[index].address_geocode;
                 } else {
-                    feature.properties.image = "<img src=\"" + strImageBase + "na.jpg\" width=\"640\" height=\"390\" /> <h2>" + app.objData[0].hotels[index].name + "</h2><p><span class=\"subhead\">Description:</span> " + app.objData[0].hotels[index].description + "</p><p><span class=\"subhead\">Info:</span> " + app.objData[0].hotels[index].website + "<br>" + app.objData[0].hotels[index].address_geocode;
+                    feature.properties.image = "<img src=\"" + strImageBase + "na.jpg\" class='map-img' /> <h2>" + app.objData[0].hotels[index].name + "</h2><p><span class=\"subhead\">Description:</span> " + app.objData[0].hotels[index].description + "</p><p><span class=\"subhead\">Info:</span> " + app.objData[0].hotels[index].website + "<br>" + app.objData[0].hotels[index].address_geocode;
                 }
                 feature.geometry = {};
                 feature.geometry.type = "Point";
@@ -122,9 +153,14 @@ define(
                 // Create custom popup content from the GeoJSON property 'video'
                 var popupContent = feature.properties.image;
 
+                //set icon
+                if (feature.properties.icon !== undefined) {
+                    marker.setIcon(L.icon(feature.properties.icon));
+                }
+
                 // bind the popup to the marker http://leafletjs.com/reference.html#popup
                 marker.bindPopup(popupContent, {
-                    closeButton: false,
+                    closeButton: true,
                     minWidth: 320
                 });
             });
