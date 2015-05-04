@@ -16,7 +16,13 @@ define(
 
         app.loadData = function () {
             var hostname = window.location.hostname;
-            var strURL = "http://" + hostname + "/services/webproxy/?url=" + "http://www.gannett-cdn.com/experiments/usatoday/2015/05/broadway/data/data.json";
+            var strURL;
+
+            if (hostname != "www.gannett-cdn.com") {
+                strURL = "http://" + hostname + "/services/webproxy/?url=" + "http://www.gannett-cdn.com/experiments/usatoday/2015/05/broadway/data/data.json";
+            } else {
+                strURL = "http://www.gannett-cdn.com/experiments/usatoday/2015/05/broadway/data/data.json";
+            }
 
             if (hostname != "localhost") {
                 jQuery.getJSON(strURL, function (data) { //"http://" + hostname + "/services/webproxy/?url=" + strURL, function (data)
