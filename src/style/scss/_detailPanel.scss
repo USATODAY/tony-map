@@ -4,6 +4,7 @@
     height: 100%;
     left: 0;
     // max-width: 800px;
+    overflow-y: auto;
     padding: 2em;
     position: fixed;
     top: 0;
@@ -14,6 +15,10 @@
 
     &.iapp-show {
         transform: translate(0, 0);
+    }
+
+    @media (max-width: 600px) {
+        padding: 3.5em 2em;
     }
 }
 
@@ -29,6 +34,19 @@
 }
 
 .iapp-detail-wrap {
-    max-width: 600px;
+    max-width: 400px;
     margin: 0 auto;
+}
+
+.iapp-detail-image {
+    width: 100%;
+}
+
+.iapp-detail-info {
+    margin-bottom: 0.25em;
+    margin-top: 0.25em;
+}
+
+.iapp-detail-title {
+    margin-bottom: 0.5em;
 }

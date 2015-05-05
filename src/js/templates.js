@@ -10,7 +10,7 @@ __p += '<!-- PROJECT HEAD -->\n<div class="iapp-head-wrap">\n    <h2 class="iapp
 ((__t = ( head )) == null ? '' : __t) +
 '</h2>\n    <p class="iapp-page-chatter">' +
 ((__t = ( chatter )) == null ? '' : __t) +
-'</p>\n    <div class="iapp-share-wrap"></div>\n    <div class="iapp-key-wrap"></div>\n</div>\n\n\n<!-- MAIN CONTENT -->\n<div class=\'main-content-wrap\'>\n\n    <div id=\'map\'></div>\n\n</div>\n\n\n<!-- FOOTER -->\n<div class=\'iapp-footer-wrap cf\'>\n    <!-- CREDITS LIST  -->\n    <h6><strong>Credits:</strong> By Allen, Denny Gainer, Laura Petrecca and Mitchell Thorson, USA TODAY</h6>\n</div>\n\n<div class="iapp-panel iapp-detail-panel hide"></div>\n\n\n';
+'</p>\n    <div class="iapp-share-wrap"></div>\n    <div class="iapp-key-wrap"></div>\n</div>\n\n\n<!-- MAIN CONTENT -->\n<div class=\'main-content-wrap\'>\n\n    <div id=\'map\'></div>\n\n</div>\n\n\n<!-- FOOTER -->\n<div class=\'iapp-footer-wrap cf\'>\n    <!-- CREDITS LIST  -->\n</div>\n\n<div class="iapp-panel iapp-detail-panel hide"></div>\n\n\n';
 
 }
 return __p
@@ -23,15 +23,21 @@ function print() { __p += __j.call(arguments, '') }
 with (obj) {
 __p += '<div class="iapp-detail-wrap">\n    <div class="iapp-detail-close-button"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/broadway/images/close-icon-grey.svg" alt="close" /></div>\n    <div class="iapp-detail-image-wrap">\n        ';
  if (image !== "") { ;
-__p += '\n            <img class="iapp-detail-image" src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/broadway/images/' +
+__p += '\n        <img class="iapp-detail-image" src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/broadway/images/' +
 ((__t = ( image )) == null ? '' : __t) +
-'" alt="">\n        ';
+'" alt="">\n            ';
+ } else {;
+__p += '\n            <img class="iapp-detail-image" src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/broadway/images/na.jpg" alt="">\n            ';
  } ;
 __p += '\n    </div>\n\n    <h3 class="iapp-detail-title">' +
 ((__t = ( name )) == null ? '' : __t) +
 '</h3>\n    <p class="iapp-detail-description">' +
 ((__t = ( description )) == null ? '' : __t) +
-'</p>\n</div>\n';
+'</p>\n    <p class="iapp-detail-info">' +
+((__t = ( address_geocode )) == null ? '' : __t) +
+' </p>\n    <p class="iapp-detail-info"><a href="' +
+((__t = (website)) == null ? '' : __t) +
+'"> website</a></p>\n</div>\n';
 
 }
 return __p
@@ -91,10 +97,12 @@ var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
 with (obj) {
 __p += '<div class="iapp-detail-wrap">\n    <div class="iapp-detail-close-button"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/broadway/images/close-icon-grey.svg" alt="close" /></div>\n    <div class="iapp-detail-image-wrap">\n        ';
- if (image !== "") { ;
-__p += '\n            <img class="iapp-detail-image" src="' +
-((__t = ( image )) == null ? '' : __t) +
-'" alt="">\n        ';
+ if (shows[0].image !== "") { ;
+__p += '\n        <img class="iapp-detail-image" src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/broadway/images/' +
+((__t = ( shows[0].image)) == null ? '' : __t) +
+' " alt="">\n        ';
+ } else {;
+__p += '\n            <img class="iapp-detail-image" src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/broadway/images/na.jpg" alt="">\n        ';
  } ;
 __p += '\n    </div>\n\n    <h3 class="iapp-detail-title">' +
 ((__t = ( name )) == null ? '' : __t) +
@@ -102,7 +110,9 @@ __p += '\n    </div>\n\n    <h3 class="iapp-detail-title">' +
 ((__t = ( shows[0].name )) == null ? '' : __t) +
 '</h3>\n    <p class="iapp-detail-description">' +
 ((__t = ( shows[0].description )) == null ? '' : __t) +
-'</p>\n</div>\n';
+'</p>\n    <p class="iapp-detail-info">' +
+((__t = ( address_geocode )) == null ? '' : __t) +
+' </p>\n</div>\n';
 
 }
 return __p

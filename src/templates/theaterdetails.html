@@ -1,12 +1,15 @@
 <div class="iapp-detail-wrap">
     <div class="iapp-detail-close-button"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/broadway/images/close-icon-grey.svg" alt="close" /></div>
     <div class="iapp-detail-image-wrap">
-        <% if (image !== "") { %>
-            <img class="iapp-detail-image" src="<%= image %>" alt="">
+        <% if (shows[0].image !== "") { %>
+        <img class="iapp-detail-image" src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/broadway/images/<%= shows[0].image%> " alt="">
+        <% } else {%>
+            <img class="iapp-detail-image" src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/broadway/images/na.jpg" alt="">
         <% } %>
     </div>
 
     <h3 class="iapp-detail-title"><%= name %></h3>
     <h3 class="iapp-detail-title"><%= shows[0].name %></h3>
     <p class="iapp-detail-description"><%= shows[0].description %></p>
+    <p class="iapp-detail-info"><%= address_geocode %> </p>
 </div>
