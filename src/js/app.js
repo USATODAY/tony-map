@@ -114,7 +114,7 @@ define(
                 feature.properties["marker-size"] = "medium";
                 feature.properties["marker-symbol"] = "restaurant";
                 if (app.objData[0].restaurants[index].image !== "") {
-                    feature.properties.image = "<img src=\"" + strImageBase + app.objData[0].restaurants[index].image + " class='map-img'/> <h2>" + app.objData[0].restaurants[index].name + "</h2><p><span class=\"subhead\">Description:</span> " + app.objData[0].restaurants[index].description + "</p><p><span class=\"subhead\">Info:</span> " + app.objData[0].restaurants[index].website + "<br>" + app.objData[0].restaurants[index].address_geocode;
+                    feature.properties.image = "<img src=\"" + strImageBase + app.objData[0].restaurants[index].image + "\" class='map-img'/> <h2>" + app.objData[0].restaurants[index].name + "</h2><p><span class=\"subhead\">Description:</span> " + app.objData[0].restaurants[index].description + "</p><p><span class=\"subhead\">Info:</span> " + app.objData[0].restaurants[index].website + "<br>" + app.objData[0].restaurants[index].address_geocode;
                 } else {
                     feature.properties.image = "<img src=\"" + strImageBase + "na.jpg\" class='map-img' /> <h2>" + app.objData[0].restaurants[index].name + "</h2><p><span class=\"subhead\">Description:</span> " + app.objData[0].restaurants[index].description + "</p><p><span class=\"subhead\">Info:</span> " + app.objData[0].restaurants[index].website + "<br>" + app.objData[0].restaurants[index].address_geocode;
                 }
@@ -170,7 +170,7 @@ define(
                     marker.setIcon(L.icon(feature.properties.icon));
                 }
 
-                var popupWidth = 320;
+                var popupWidth = 400;
 
                 if (config.isMobile) {
                     popupWidth = 290;

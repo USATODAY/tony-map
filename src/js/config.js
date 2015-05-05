@@ -19,8 +19,10 @@ define(
         isMobile= true;
     }
 
-    if (!isMobile && window.Modernizr.touch) {
-        isTablet = true;
+    if (!isMobile && window.Modernizr) {
+        if (window.Modernizr.touch) {
+            isTablet = true;
+        }
     }
 
     fb_app_id = staticInfo.facebook.app_id;
