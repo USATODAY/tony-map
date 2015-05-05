@@ -1,0 +1,12 @@
+<div class="iapp-detail-wrap">
+    <div class="iapp-detail-close-button">Close</div>
+    <div class="iapp-detail-image-wrap">
+        <% if (image !== "") { %>
+            <img class="iapp-detail-image" src="<%= image %>" alt="">
+        <% } %>
+    </div>
+
+    <h3 class="iapp-detail-title"><%= name %></h3>
+    <h3 class="iapp-detail-title"><%= shows[0].name %></h3>
+    <p class="iapp-detail-description"><%= shows[0].description %></p>
+</div>

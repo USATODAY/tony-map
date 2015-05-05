@@ -1,0 +1,18 @@
+.iapp-panel {
+    background-color: white;
+    color: $medium-grey;
+    height: 100%;
+    left: 0;
+    // max-width: 800px;
+    padding: 2em;
+    position: fixed;
+    top: 0;
+    transform: translate(100%, 0);
+    transition: transform 250ms ease;
+    width: 100%;
+    z-index: 2000;
+
+    &.iapp-show {
+        transform: translate(0, 0);
+    }
+}

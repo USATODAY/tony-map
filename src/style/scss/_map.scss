@@ -5,6 +5,12 @@ body { margin:0; padding:0; }
     height: 600px;
     max-height: 75%;
     width:100%; 
+
+    @media(max-width: 800px) {
+        height: 300px;
+        margin: 0 auto;
+        width: 90%;
+    }
 }
 
 .leaflet-popup-content {
@@ -14,6 +20,6 @@ body { margin:0; padding:0; }
 // .leaflet-popup-content-wrapper { width: 660px;}
 
 .map-img {
-    width: 300px;
+    width: 100%;
 }
 

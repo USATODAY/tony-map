@@ -1,0 +1,11 @@
+<div class="iapp-detail-wrap">
+    <div class="iapp-detail-close-button">Close</div>
+    <div class="iapp-detail-image-wrap">
+        <% if (image !== "") { %>
+            <img class="iapp-detail-image" src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/broadway/images/<%= image %>" alt="">
+        <% } %>
+    </div>
+
+    <h3 class="iapp-detail-title"><%= name %></h3>
+    <p class="iapp-detail-description"><%= description %></p>
+</div>
