@@ -21,7 +21,7 @@ obj || (obj = {});
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
 with (obj) {
-__p += '<div class="iapp-detail-wrap">\n    <div class="iapp-detail-close-button">Close</div>\n    <div class="iapp-detail-image-wrap">\n        ';
+__p += '<div class="iapp-detail-wrap">\n    <div class="iapp-detail-close-button"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/broadway/images/close-icon-grey.svg" alt="close" /></div>\n    <div class="iapp-detail-image-wrap">\n        ';
  if (image !== "") { ;
 __p += '\n            <img class="iapp-detail-image" src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/broadway/images/' +
 ((__t = ( image )) == null ? '' : __t) +
@@ -90,7 +90,7 @@ obj || (obj = {});
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
 with (obj) {
-__p += '<div class="iapp-detail-wrap">\n    <div class="iapp-detail-close-button">Close</div>\n    <div class="iapp-detail-image-wrap">\n        ';
+__p += '<div class="iapp-detail-wrap">\n    <div class="iapp-detail-close-button"><img src="http://www.gannett-cdn.com/experiments/usatoday/2015/05/broadway/images/close-icon-grey.svg" alt="close" /></div>\n    <div class="iapp-detail-image-wrap">\n        ';
  if (image !== "") { ;
 __p += '\n            <img class="iapp-detail-image" src="' +
 ((__t = ( image )) == null ? '' : __t) +

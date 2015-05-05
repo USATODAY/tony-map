@@ -8,6 +8,8 @@ define(
 
 
     var isMobile, fb_app_id;
+    
+    var isTablet = false;
 
     var staticInfo = JSON.parse(jQuery(".staticinfo").html());
 
@@ -15,6 +17,10 @@ define(
         isMobile = false;
     } else {
         isMobile= true;
+    }
+
+    if (!isMobile && window.Modernizr.touch) {
+        isTablet = true;
     }
 
     fb_app_id = staticInfo.facebook.app_id;
