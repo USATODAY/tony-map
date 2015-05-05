@@ -1,6 +1,9 @@
 .iapp-key-entry {
     display: inline-block;
     margin-right: 20px;
+    @media (max-width: 600px) {
+        font-size: 0.8em;
+    }
 }
 
 .iapp-key-img {

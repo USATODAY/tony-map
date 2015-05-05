@@ -37,7 +37,7 @@ __p += '\n    </div>\n\n    <h3 class="iapp-detail-title">' +
 ((__t = ( address_geocode )) == null ? '' : __t) +
 ' </p>\n    <p class="iapp-detail-info"><a href="' +
 ((__t = (website)) == null ? '' : __t) +
-'"> website</a></p>\n</div>\n';
+'" target="_blank"> website</a></p>\n</div>\n';
 
 }
 return __p
