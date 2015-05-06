@@ -61,10 +61,11 @@ define(
             jQuery(".js-head").html(app.objData[0].project_head);
             jQuery(".js-chatter").html(app.objData[0].chatter);
             L.mapbox.accessToken = 'pk.eyJ1IjoiZGdhaW5lciIsImEiOiJyWkE2bndZIn0.dMIRp-JYsg6ZJRKsMu9-nA';
-            var map = L.mapbox.map('map', 'usatodaygraphics.basemap')
-                .setView([40.7583, -73.9789], 14);
+            var map = L.mapbox.map('map', 'usatodaygraphics.basemap', {
+                zoomControl: false
+            }).setView([40.7583, -73.9789], 14);
 
-            L.control.scale().addTo(map);
+            new L.Control.Zoom({ position: 'topright' }).addTo(map);
 
             var geoJson = {};
             geoJson.features = [];
