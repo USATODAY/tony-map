@@ -178,14 +178,9 @@ define(
 
                 // bind the popup to the marker http://leafletjs.com/reference.html#popup
                 
-                if (config.isMobile) {
-                    marker.addEventListener("click", app.handleClick);
-                } else {
-                    marker.bindPopup(popupContent, {
-                        closeButton: true,
-                        minWidth: popupWidth
-                    });
-                }
+                marker.addEventListener("click", app.handleClick);
+                marker.bindPopup(feature.properties.title);
+                
             });
 
 // Add features to the map
@@ -211,6 +206,7 @@ define(
             }
 
             $detailPanel.addClass("iapp-show");
+            $('.iapp-main-panel').addClass('iapp-slide');
             $('.iapp-detail-close-button').click(function() {
                 app.closeDetails();
             });
@@ -219,6 +215,7 @@ define(
 
         app.closeDetails = function() {
             $detailPanel.removeClass("iapp-show");
+            $('.iapp-main-panel').removeClass('iapp-slide');
         };
 
         app.createShare = function(shareString) {

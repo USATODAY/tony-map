@@ -20,6 +20,12 @@
     @media (max-width: 600px) {
         padding: 3.5em 2em;
     }
+    
+    @media (min-width: 900px) {
+        left: auto;
+        right: 0;
+        width: 500px;
+    }
 }
 
 .iapp-detail-close-button {
@@ -50,3 +56,13 @@
 .iapp-detail-title {
     margin-bottom: 0.5em;
 }
+
+.iapp-main-panel {
+    transform: translate(0, 0);
+    transition: transform 250ms ease;
+}
+
+.iapp-slide {
+    transform: translate(-500px, 0);
+}
+
