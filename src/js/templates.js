@@ -10,6 +10,8 @@ __p += '<div class="iapp-main-panel">\n    <!-- PROJECT HEAD -->\n    <div class
 ((__t = ( head )) == null ? '' : __t) +
 '</h2>\n        <p class="iapp-page-chatter">' +
 ((__t = ( chatter )) == null ? '' : __t) +
+'</p>\n        <p class="iapp-page-credits"><strong>Credits: </strong>' +
+((__t = ( credits )) == null ? '' : __t) +
 '</p>\n        <div class="iapp-share-wrap"></div>\n        <div class="iapp-key-wrap"></div>\n    </div>\n\n\n    <!-- MAIN CONTENT -->\n    <div class=\'main-content-wrap\'>\n\n        <div id=\'map\'></div>\n\n    </div>\n\n\n    <!-- FOOTER -->\n    <div class=\'iapp-footer-wrap cf\'>\n        <!-- CREDITS LIST  -->\n    </div>\n</div>\n<div class="iapp-panel iapp-detail-panel hide"></div>\n\n\n';
 
 }

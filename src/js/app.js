@@ -48,7 +48,7 @@ define(
         };
 
         app.render = function() {
-            $('.iapp-page-wrap').html(templates['app.html']({head: app.objData[0].project_head, chatter: app.objData[0].chatter}));
+            $('.iapp-page-wrap').html(templates['app.html']({head: app.objData[0].project_head, chatter: app.objData[0].chatter, credits: app.objData[0].credits}));
             $('.iapp-share-wrap').html(templates['share.html'](app.createShare(app.objData[0].project_share)));
             $('.iapp-key-wrap').html(templates['key.html']());
             $detailPanel = $(".iapp-detail-panel");
