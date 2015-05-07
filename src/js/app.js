@@ -60,8 +60,8 @@ define(
             var strImageBase = "http://www.gannett-cdn.com/experiments/usatoday/2015/05/broadway/images/";
             jQuery(".js-head").html(app.objData[0].project_head);
             jQuery(".js-chatter").html(app.objData[0].chatter);
-            L.mapbox.accessToken = 'pk.eyJ1IjoiZGdhaW5lciIsImEiOiJyWkE2bndZIn0.dMIRp-JYsg6ZJRKsMu9-nA';
-            var map = L.mapbox.map('map', 'usatodaygraphics.basemap', {
+            L.mapbox.accessToken = 'pk.eyJ1IjoidXNhdG9kYXkiLCJhIjoiV0p3dkdWRSJ9.1sMQNAu1GZx8kdiYjpNfXA';
+            var map = L.mapbox.map('map', 'usatoday.basemap', {
                 zoomControl: false
             }).setView([40.7583, -73.9789], 14);
 
