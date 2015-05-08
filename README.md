@@ -1,7 +1,6 @@
-#mapboxtest
+#Brodway's Best
 
-The best project ever.
-
+A Broadway visitor’s guide to the best shows, restaurants and hotels.
 
 Copyright 2015 USA TODAY. All rights reserved. No part of these materials may be reproduced, modified, stored in a retrieval system, or retransmitted, in any form or by any means, electronic, mechanical or otherwise, without prior written permission from USA TODAY.
 
@@ -20,7 +19,3 @@ and install Bower with
 `npm install -g bower`
 
 Once those dependencies are set up, from this repository run `npm install`, then run `grunt`
-
-
-###Live version:
-http://www.gannett-cdn.com/experiments/usatoday/2015/05/mapboxtest/
