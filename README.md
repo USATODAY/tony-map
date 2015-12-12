@@ -2,8 +2,6 @@
 
 A Broadway visitor’s guide to the best shows, restaurants and hotels.
 
-Copyright 2015 USA TODAY. All rights reserved. No part of these materials may be reproduced, modified, stored in a retrieval system, or retransmitted, in any form or by any means, electronic, mechanical or otherwise, without prior written permission from USA TODAY.
-
 ##Development
 
 The requirements for this project are Node.js, Bower and Grunt. 
